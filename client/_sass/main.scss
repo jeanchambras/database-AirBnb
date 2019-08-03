@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+
+
+.bg {
+min-height: 100vh;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 20vh;
+    &.blur {
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+    }
+    &.barcelona {
+        background: url("../camp.jpg") no-repeat center center fixed;
+    }
+    &.berlin {
+        background: url("../berlin-stadium.jpg") no-repeat center center fixed;
+    }
+    &.madrid {
+        background: url("../barnabeu.jpg") no-repeat center center fixed;
+    }
+
+}
+
+
+.search {
+    // position: absolute;
+    // top: 8em;
+    // right: 8em;
+    width: 20vw;
+}
+
+.is-vertical-center {
+    display: flex;
+    align-items: center;
+    margin: auto auto;
+  }
+
+.is-narrow {
+    width: 50vw;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-search {
+    padding: 60px;
+}
+
+.transparent-light {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+.result-img {
+    max-height: 150px;
+}
+
+.result{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.space-bottom {
+    margin-bottom: 1em;
+}
+
+.space-sides{
+    margin: 0 0.5em;
+}
+
+.center-screen {
+    position: relative;
+    top: 10vh;
+    // transform: perspective(1px) translateY(-50%);
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.result-predef{
+
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.not-visible{
+    display: none;
+}
+
+.query{
+    min-height: 200px;
+}
+
